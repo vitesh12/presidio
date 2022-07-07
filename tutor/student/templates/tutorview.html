@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -109,22 +110,11 @@ cursor: pointer;"  class="notification">
 </div>
 
 <div class="grid-container">
-    <!-- <div class="grid-item">
-<div class="card">
-   <img src="/w3images/team2.jpg" alt="John" style="width:100%"> 
-  {% for i in object_list %}
-  {{member.firstname}} - {{member.qua}} - {{member.gender}}
-{% endfor %}
-   
-  </div>
-  <p><button>Contact</button></p>
-</div>
-</div> -->
 {% for i in data %}
 <div class="grid-item">
     <div class="card">
-      <!-- <img src="/w3images/team2.jpg" alt="John" style="width:100%"> -->
-      <h1>{{i.firstname}}</h1>
+      <!-- <img src=" {% static 'C:\\Users\\hp\\projects\\guide\\home\\static\\image\\logo.png' %}" alt="John" style="width:100%"> -->
+      <h3>{{i.firstname}}</h3>
       <p class="title">{{i.qua}}</p>
       <p class="title">{{i.gender}}</p>
       <p class="title">{{i.subject}}</p>

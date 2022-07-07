@@ -14,7 +14,6 @@ def login(request):
     if request.method == 'POST':
         name = request.POST['uname']
         login.name=name
-        print(login.name)
         password = request.POST['psw']
         tp = request.POST.get('user')
         user = auth.authenticate(username=name,password=password)

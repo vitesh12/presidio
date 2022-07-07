@@ -96,14 +96,13 @@ button:hover, a:hover {
       <span>Logout</span>
     </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  
-<a href="#" style="background-color: #04AA6D;
+<a href="#" style="background-color: blue;
 color: white;
 padding: 14px 20px;
 margin: 8px 0;
 border: none;
 cursor: pointer;"  class="notification">
   <span>Inbox</span>
-  <span class="badge">3</span>
 </a>
 </form>
 </div>
@@ -123,8 +122,7 @@ cursor: pointer;"  class="notification">
 {% for i in data %}
 <div class="grid-item">
     <div class="card">
-      <!-- <img src="/w3images/team2.jpg" alt="John" style="width:100%"> -->
-      <h1>{{i.firstname}}</h1>
+      <h3>{{i.firstname}}</h3>
       <p class="title">{{i.qua}}</p>
       <p class="title">{{i.gender}}</p>
       <p class="title">{{i.subject}}</p>
